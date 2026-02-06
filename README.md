@@ -6,7 +6,7 @@ C#으로 **MMORPG 서버를 처음부터 직접 구현하며 학습한 내용을
 
 
 
-## 🎯 Goals
+## 🔖 목표
 
 * MMORPG 서버의 전체 흐름 이해
 * C# 기반 네트워크 프로그래밍 학습
@@ -15,28 +15,27 @@ C#으로 **MMORPG 서버를 처음부터 직접 구현하며 학습한 내용을
 
 
 
-## 🧱 Architecture Overview
+## 🔖 아키텍처
 
 To be updated
 
 
 
-## 🛠 Features (구현/예정)
-
+## 🔖 구현/예정
 ### ✅ Implemented
 
 To be updated
 
-### 🚧 In Progress / Planned
+### ⚙️ In Progress / Planned
 
 To be updated
 
-## 🚀 Future Plans
+## 🧭 Future Plans
 
 To be updated
 
 
-## 📌 Author
+## 🔖 Author
 
 * HEESUN YOON (Backend / Server Developer)
 * Studying MMORPG server architecture with C#

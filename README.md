@@ -30,7 +30,7 @@ To be updated
 
 To be updated
 
-## 🧭 Future Plans
+### 🧭 Future Plans
 
 To be updated
 

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Course03_Graph
 {
-    class DFSPractice
+    class PracticeDFS
     {
 
         public void Run()

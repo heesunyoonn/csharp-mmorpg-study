@@ -45,6 +45,7 @@ namespace Course03_Graph
         }
 
 
+
         private void ApplyBFS()
         {
             bool[,] found = new bool[_board.Height, _board.Width];

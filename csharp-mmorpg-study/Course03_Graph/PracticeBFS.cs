@@ -8,7 +8,7 @@ namespace Course03_Graph
      * BFS는 최단거리 찾을 때 주로 사용됨
      * 
      */
-    class BFSPractice
+    class PracticeBFS
     {
 
         public void Run()

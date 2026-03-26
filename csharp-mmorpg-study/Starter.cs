@@ -1,4 +1,5 @@
 ﻿using Course03_Graph;
+using TextGame;
 
 namespace TextRPG
 {
@@ -6,7 +7,7 @@ namespace TextRPG
     {
         static void Main(string[] args)
         {
-            // new GameStarter().Run();
+            //new GameStarter().Run();
             new Main().Run();
         }
     }

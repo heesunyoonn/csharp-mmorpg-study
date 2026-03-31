@@ -11,44 +11,63 @@ namespace Course03_Graph
             Dijkstra(0);
         }
 
-
+        /*
+         * 다익스트라 알고리즘은 단순히 local 노드에서 최단 거리를 따라가는게 아님.
+         * 전체 후보 (global)에서 최단거리를 확정해가는 알고리즘임.
+         */
         private void Dijkstra(int start)
         {
             bool[] visited = new bool[6];
             int[] distance = new int[6];
+            int[] parent = new int[6];
 
-            //distance가 0일 때 정점끼리 연결이 안되서 0일수도 있으므로 큰 수로 초기화)
             Array.Fill(distance, Int32.MaxValue);
-
             distance[start] = 0;
-            int count = Graph.DijkstraMatrix.GetLength(0);
+            parent[start] = start;
+            int row = Graph.DijkstraMatrix.GetLength(0);
 
-
-
-            /*
-             *TODO: 가장 좋은 정점 후보를 찾는다.
-             *1. 연결이 되어있어야 하고,
-             *2. 방문한 적이 없어야 한다.
-             *3. 최단 거리여야한다.
-             *
-             *TODO: 방문하고, 거리를 추가한다.
-             *
-             */
             while (true)
             {
-                for (int i = 0; i < count; i++)
+                //[1] 전체 노드 탐색 -> 최단 노드 선택
+                int now = -1;
+                int closest = Int32.MaxValue;
+                for (int i = 0; i < row; i++)
                 {
-                    //TODO: start 지점부터 각 정점의 최단거리를 distance에 저장하면서 반복문 돌면 됨
+                    if (visited[i])
+                        continue;
 
+                    if (distance[i] == Int32.MaxValue || distance[i] >= closest)
+                        continue;
 
+                    closest = distance[i];
+                    now = i;
                 }
 
+                //이미 모두 방문했다면 while문 엑시트
+                if (now == -1)
+                    break;
+
+
+                visited[now] = true;
+
+
+                //[2] 방문 정점기준, 다음 노드의 최단거리를 저장
+                for (int next = 0; next < row; next++)
+                {
+                    if (Graph.DijkstraMatrix[now, next] == -1)
+                        continue;
+
+                    if (visited[next])
+                        continue;
+
+                    int nextDistance = distance[now] + Graph.DijkstraMatrix[now, next];
+                    if (nextDistance < distance[next])
+                    {
+                        distance[next] = nextDistance;
+                        parent[next] = now;
+                    }
+                }
             }
-
-
-
-
-
         }
     }
 }

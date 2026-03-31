@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Course02_Algorithm
+namespace Course02_DataStructureAndAlgorithm
 {
-    class DynamicArrayPractice
+    class PracticeDynamicArray
     {
 
         /*

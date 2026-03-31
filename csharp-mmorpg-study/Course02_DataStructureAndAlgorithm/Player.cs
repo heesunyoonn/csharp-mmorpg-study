@@ -1,6 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace Course03_Graph
+namespace Course02_DataStructureAndAlgorithm
 {
     /*
      * ROLE: [길찾기] 플레이어

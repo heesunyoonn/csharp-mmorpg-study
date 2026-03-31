@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Course03_Graph
+namespace Course02_DataStructureAndAlgorithm
 {
     public enum Direction
     {

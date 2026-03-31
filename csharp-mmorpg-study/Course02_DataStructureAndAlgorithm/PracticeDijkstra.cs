@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Course03_Graph
+namespace Course02_DataStructureAndAlgorithm
 {
     internal class PracticeDijkstra
     {
@@ -50,8 +50,10 @@ namespace Course03_Graph
 
                 visited[now] = true;
 
-
-                //[2] 방문 정점기준, 다음 노드의 최단거리를 저장
+                /*
+                 * 현재 정점을 기준으로 인접한 정점까지의 거리를 각 distance[i]에 저장.
+                 * 기존 거리보다 짧으면 갱신
+                 */
                 for (int next = 0; next < row; next++)
                 {
                     if (Graph.DijkstraMatrix[now, next] == -1)

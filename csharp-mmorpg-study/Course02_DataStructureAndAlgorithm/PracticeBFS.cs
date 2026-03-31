@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Course03_Graph
+namespace Course02_DataStructureAndAlgorithm
 {
     /*
      * BFS는 최단거리 찾을 때 주로 사용됨

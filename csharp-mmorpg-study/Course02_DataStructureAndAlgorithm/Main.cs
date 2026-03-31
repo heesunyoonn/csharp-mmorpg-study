@@ -1,4 +1,4 @@
-﻿namespace Course03_Graph
+﻿namespace Course02_DataStructureAndAlgorithm
 {
     class Main
     {

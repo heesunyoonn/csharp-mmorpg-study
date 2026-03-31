@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Course02_Algorithm
+namespace Course02_DataStructureAndAlgorithm
 {
     /*
      * ROLE: [길찾기] 게임 패턴에서 각 정점의 타입

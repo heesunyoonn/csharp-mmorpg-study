@@ -1,10 +1,9 @@
-﻿using Course02_Algorithm;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 using static System.Net.Mime.MediaTypeNames;
 
-namespace Course03_Graph
+namespace Course02_DataStructureAndAlgorithm
 {
     /*
      * ROLE: [길찾기] 보드 탐색

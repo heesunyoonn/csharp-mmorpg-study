@@ -1,7 +1,7 @@
-﻿namespace Course02_Algorithm
+﻿namespace Course02_DataStructureAndAlgorithm
 {
 
-    class LinkedListPractice
+    class PracticeLinkedList
     {
         class MyLinkedListNode<T>
         {

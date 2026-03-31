@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Course02_Algorithm
+namespace Course02_DataStructureAndAlgorithm
 {
     /*
      * ROLE: [길찾기] 게임 메타 설정
@@ -10,13 +10,15 @@ namespace Course02_Algorithm
     class GameMap
     {
 
-        Board? _board;
-        Player? _player;
+        Board _board;
+        Player _player;
+        Navigator _navigator;
 
-        public void InitializeMap()
+        public GameMap()
         {
             _board = new Board(25, 25);
-            _player = new Player(new Point(1, 1), _board);
+            _navigator = new Navigator(_board);
+            _player = new Player(new Point(1, 1), _board, _navigator);
         }
 
         public void GameLoop()
@@ -37,14 +39,13 @@ namespace Course02_Algorithm
                 lastTick = currentTick;
                 #endregion
 
-
                 Update(deltaTick);
                 RenderFrame();
             }
 
         }
 
-        public void Update(int deltaTick) => _player.Update(deltaTick);
+        public void Update(int deltaTick) => _player.Execute(deltaTick);
         public void RenderFrame() => _board.Render(_player);
 
     }

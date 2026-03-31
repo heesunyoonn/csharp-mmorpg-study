@@ -1,4 +1,4 @@
-﻿namespace Course02_Algorithm
+﻿namespace Course02_DataStructureAndAlgorithm
 {
     class BigO
     {
